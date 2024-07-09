@@ -1,4 +1,4 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});
@@ -24,16 +24,16 @@ class Page1 extends StatelessWidget {
                   height: 150,
                   width: 150,
                 ),
-                SizedBox(height: 20), // إضافة فراغ بين الصورة والنص
-                Text(
+                const SizedBox(height: 20), // إضافة فراغ بين الصورة والنص
+                const Text(
                   'ITI Quizz App',
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.amber, // لون النص
                   ),
                 ),
-                SizedBox(height: 20), // إضافة فراغ بين النص والزر
-                Text(
+                const SizedBox(height: 20), // إضافة فراغ بين النص والزر
+                const Text(
                   'We are creative, enjoy the app',
                   style: TextStyle(
                     fontSize: 20,
@@ -43,9 +43,31 @@ class Page1 extends StatelessWidget {
               ],
             ),
           ),
+          Positioned(
+            bottom: 20,
+            left: 0,
+            right: 0,
+            child: Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  // أكشن الزر
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green, // لون الزر
+                  padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                ),
+                child: const Text(
+                  'Start',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white, // لون النص داخل الزر
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
 }
-*/
